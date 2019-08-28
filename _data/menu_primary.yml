@@ -1,0 +1,4 @@
+- name: Plans
+  url: /plans
+- name: Blog
+  url: /blog
