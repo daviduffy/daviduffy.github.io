@@ -5,6 +5,18 @@ classes: blog
 footer_script: scroll.init(undefined, 'blog');
 ---
 {% include _splash_blog.html %}
+<ul class="category-tabs">
+  {% for category in site.categories %}
+    <li class="category-tab">
+      <a class="a" href="{{ category.url }}">
+        <span class="ic ic--{{ category.slug }}">
+          {% include {{ category.icon }} %}
+        </span>
+        <span class="h4">{{ category.name }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 <section class="section section--narrow section--blog">
   <h2>Posts</h2>
   <ul>
@@ -16,13 +28,4 @@ footer_script: scroll.init(undefined, 'blog');
     {% endfor %}
   </ul>
   <h2>Categories</h2>
-  <ul>
-    {% for category in site.categories %}
-      <h2>
-        <a class="a a--f" href="{{ category.url }}">
-          <span>{{ category.name }}</span>
-        </a>
-      </h2>
-    {% endfor %}
-  </ul>
 </section>

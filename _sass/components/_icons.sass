@@ -1,6 +1,26 @@
 .ic
   display: inline-block
 
+.ic--best_practices,
+.ic--quick_tips,
+.ic--whats_new
+  width: var( --category-icon-size )
+  height: var( --category-icon-size )
+  position: relative
+  margin: 0 0.5rem
+  svg
+    @include abs-centered
+
+.ic--best_practices
+  svg
+    width: 3.2rem
+    height: 3.2rem
+
+.ic--whats_new
+  svg
+    width: 2.8rem
+    height: 2.8rem
+
 .ic--dot
   width: 0.75rem
   height: 0.75rem
