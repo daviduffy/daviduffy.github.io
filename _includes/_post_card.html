@@ -1,7 +1,7 @@
 <li class="post-card post-card--{{ include.type }}">
   <a class="post-card__image" href="{{ include.post.url }}">
     {% if include.post.image %}
-      <img src="{{ include.post.image }}" alt="" />
+      <img src="{{ include.post.image }}" class="{{ include.post.style }}" alt="" />
     {% else %}
       <img src="/assets/img/placeholder.png" alt="" />
     {% endif %}

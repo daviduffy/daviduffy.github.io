@@ -6,6 +6,7 @@ featured: true
 categories: best_practices
 tags: photography analytics
 blurb: My wife and I shoot weddings together -- she's the main and I second shoot. My background is in web development, and last year during a redesign of her site I did a deep dive into contact form strategy. We’ve seen dramatic results, and I wanted to share and start a dialog that can help people revisit their contact form strategy.
+image: /assets/img/laptop_glasses.jpeg
 read_duration: 11
 ---
 <!-- 

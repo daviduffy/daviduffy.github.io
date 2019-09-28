@@ -7,6 +7,8 @@ author: david
 featured: true
 read_duration: 7
 blurb: Last year in a local photographers group the topic of lead tracking and analytics came up. Only a few other photographers were doing anything to specifically track leads, in part because they did not know how, or thought it was too hard. Since 2013 my wife and I have kept track of a few key data points about each client, and developed some photographer-specific analytics. 
+image: /assets/img/desktop_analytics_screenshot.png
+style: contain
 overflow: >-
     "DIY Spreadsheet: This is an updated version of the original spreadsheet I created in 2013. It’s got built-in analytics, all you have to do is save a copy to your Google drive and enter your data. If you’re savvy with spreadsheets, dive in and modify it however you want!"
     "Nove: This is an app I made as a result of the conversation in the photographer meet-up. It's based on the concept from the spreadsheet, automates most of the data entry, and is a major improvement over the spreadsheet analytics. There are free and paid versions but the free version is great and there’s no trial period -- use it free forever."
