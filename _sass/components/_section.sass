@@ -1,5 +1,6 @@
 .section
   padding: 1rem
+  max-width: 1140px
 
   @at-root .home .section
     overflow: hidden
@@ -36,11 +37,15 @@
   @include fluid-spacing(padding-right, 56rem, 100rem, 1rem, 20rem)
 
 .section--cta
+  max-width: initial
   margin-top: 0!important
   position: relative
   text-align: center
   display: block
   background: $gradient-neutral
+
+.section--blog
+  margin: calc(var( --vertical-spacer )/2) auto
 
 .section--get-to-know
   position: relative
@@ -130,53 +135,53 @@
   clip-path: polygon(-5% -5%, 105% -5%, 105% var(--thread-form-mask), -5% var(--thread-form-mask))
   transform: translateY(var(--thread-form))
 
-.Thread
-  // stroke-dasharray: var(--thread-1-stroke)
-  stroke-dashoffset: 300
+// .Thread
+//   // stroke-dasharray: var(--thread-1-stroke)
+//   stroke-dashoffset: 300
 
-.Thread--ellipse-1
-  stroke-dasharray: var(--thread-ellipse-1)
-  // 220 => 150 for ellipse 1
+// .Thread--ellipse-1
+//   stroke-dasharray: var(--thread-ellipse-1)
+//   // 220 => 150 for ellipse 1
 
-.Thread--node
-  stroke-dasharray: var(--thread-node)
-  // 300 => 320 for node
+// .Thread--node
+//   stroke-dasharray: var(--thread-node)
+//   // 300 => 320 for node
 
-.Thread--small-line
-  stroke-dasharray: var(--thread-small-line)
-  // 300 => 307 for small line
+// .Thread--small-line
+//   stroke-dasharray: var(--thread-small-line)
+//   // 300 => 307 for small line
 
-.Thread--large-line
-  stroke-dasharray: var(--thread-large-line)
-  // 300 => 333 for larger line
+// .Thread--large-line
+//   stroke-dasharray: var(--thread-large-line)
+//   // 300 => 333 for larger line
 
-.Thread--line-endcap
-  stroke-dasharray: var(--thread-line-endcap)
+// .Thread--line-endcap
+//   stroke-dasharray: var(--thread-line-endcap)
+//   // 300 => 312 for arrow caps
+
+// .Thread--ellipse-2
+//   stroke-dasharray: var(--thread-ellipse-2)
+//   // 300 => 440 for ellipse 2
+
+// .Thread--ellipse-endcap
+//   stroke-dasharray: var(--thread-ellipse-endcap)
   // 300 => 312 for arrow caps
 
-.Thread--ellipse-2
-  stroke-dasharray: var(--thread-ellipse-2)
-  // 300 => 440 for ellipse 2
+// .Puzzle
+//   @media screen and ($min-width-medium)
+//     flex: 1
+//     min-height: 300px
 
-.Thread--ellipse-endcap
-  stroke-dasharray: var(--thread-ellipse-endcap)
-  // 300 => 312 for arrow caps
-
-.Puzzle
-  @media screen and ($min-width-medium)
-    flex: 1
-    min-height: 300px
-
-.Puzzle__line
-  will-change: stroke-dasharray
-  stroke-dasharray: var(--puzzle-stroke)
-  stroke-dashoffset: 700
-  fill: none
-  stroke: var(--white)
-  stroke-miterlimit: 10
-  stroke-linejoin: round
-  stroke-linecap: round
-  stroke-width: 3px
+// .Puzzle__line
+//   will-change: stroke-dasharray
+//   stroke-dasharray: var(--puzzle-stroke)
+//   stroke-dashoffset: 700
+//   fill: none
+//   stroke: var(--white)
+//   stroke-miterlimit: 10
+//   stroke-linejoin: round
+//   stroke-linecap: round
+//   stroke-width: 3px
 
 .section__content--top-blurb
   @include fluid-spacing(max-width, 26rem, 80rem, 24rem, 38rem)
@@ -248,6 +253,9 @@
     flex-direction: column
     @media screen and ( $min-width-medium )
       flex-flow: row wrap
+
+  .section--blog
+    margin: calc(var( --vertical-spacer )/2) auto
 
   .section--intro,
   .section--gal-blurb
@@ -348,6 +356,7 @@
       // margin: 0 auto
       display: grid
       grid-template-columns: 1fr
+
       // grid-template-rows: var( --vertical-spacer ) auto auto auto var( --vertical-spacer )
 
     // .section--intro

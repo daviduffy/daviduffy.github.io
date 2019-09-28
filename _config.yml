@@ -21,6 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: "https://nove.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+url_marketing: https://nove.io
+url_blog: https://blog.nove.io
 
 # Build settings
 markdown: kramdown

@@ -4,6 +4,7 @@ date: 2018-11-06T19:42:19+00:00
 categories: best_practices
 tags: photography inquiries analytics
 author: david
+featured: true
 read_duration: 7
 blurb: Last year in a local photographers group the topic of lead tracking and analytics came up. Only a few other photographers were doing anything to specifically track leads, in part because they did not know how, or thought it was too hard. Since 2013 my wife and I have kept track of a few key data points about each client, and developed some photographer-specific analytics. 
 overflow: >-

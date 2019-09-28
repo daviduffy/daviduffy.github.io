@@ -43,5 +43,8 @@
       {{ content }}
       {% include _footer.html %}
     </main>
+    {% if site.footer_script %}
+      <script>{{ site.footer_script }}</script>
+    {% endif %}
   </body>
 </html>
